@@ -1,2 +1,3 @@
-# RestApi
-API stands for Application Programming Interface. An API is a software intermediary that allows two applications to talk to each other. In other words, an API is the messenger that delivers your request to the provider that you're requesting it from and then delivers the response back to you.
+# RestfulApi
+A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
+Representational State Transfer (REST) is a software architectural style that defines a set of constraints to be used for creating web services. 
