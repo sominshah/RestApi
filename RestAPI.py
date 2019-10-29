@@ -3,6 +3,8 @@ import requests
 import string
 import time
 import json
+from PIL import  Image,ImageTk
+
 #functions 
 
 #after Clicking send button this fucntion will execute
@@ -119,7 +121,7 @@ Mainwindow.geometry("1000x1000")
 
 #Window Title
 Mainwindow.title("Rest API") 
-Mainwindow.iconbitmap('logo.ico')
+#Mainwindow.iconbitmap("logo.png")
 
 #Send Button
 
@@ -128,8 +130,8 @@ Mainwindow.iconbitmap('logo.ico')
 
 
 sendButton=Button(Mainwindow,text="Send",command=sendButtonFunction,height=2,width=5) 
-photo=PhotoImage(file="send1.png")
-sendButton.config(image=photo,width="70",height="50")
+#photo=PhotoImage(file="logo.png")
+#sendButton.config(image=photo,width="70",height="50")
 sendButton.place(x=940,y=20)
 
 #URL TextField
@@ -158,9 +160,11 @@ sizeLabel.place(x=625,y=100)
 typeLabel.place(x=875,y=100)
 
 #Body Button
-photo=PhotoImage(file="coding1.png")
+#photo=PhotoImage(file="coding1.png")
+#photo = ImageTk.PhotoImage(Image.open("logo.png"))
+
 bodyButton=Button(Mainwindow,text="Body",command=bodyButtonFunction,height=3,width=12) 
-bodyButton.config(image=photo,width="70",height="50")
+#bodyButton.config(image=photo,width="70",height="50")
 bodyButton.place(x=70,y=180)
 
 
